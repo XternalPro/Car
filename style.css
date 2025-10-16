@@ -1,0 +1,340 @@
+/* --- Global Styles & Variables --- */
+:root {
+    --primary-color: #f39c12; /* สีส้ม/ทอง สำหรับปุ่มและจุดเน้น */
+    --dark-color: #2c3e50;    /* สีน้ำเงินเข้ม */
+    --light-color: #ecf0f1;   /* สีขาวนวล */
+    --text-color: #34495e;    /* สีเทาเข้มสำหรับข้อความ */
+    --bg-color: #ffffff;      /* สีพื้นหลัง */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Sarabun', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f9;
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Header --- */
+header {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 25px;
+}
+
+header nav a {
+    color: var(--light-color);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: var(--primary-color);
+}
+
+/* --- Hero Section --- */
+.hero {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=2070&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-bar {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 50px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.search-bar input {
+    flex-grow: 1;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1rem;
+    font-family: 'Sarabun', sans-serif;
+    outline: none;
+}
+
+.search-bar button {
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0 25px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+.search-bar button:hover {
+    background-color: #e67e22;
+}
+
+
+/* --- Why Us Section --- */
+.why-us {
+    padding: 4rem 0;
+    background-color: #ffffff;
+}
+
+.why-us .container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    gap: 20px;
+}
+
+.feature-item i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.feature-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--dark-color);
+}
+
+
+/* --- Featured Cars Section --- */
+.featured-cars {
+    padding: 4rem 0;
+}
+
+.featured-cars h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--dark-color);
+}
+
+.car-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.car-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.car-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.car-card .car-info {
+    padding: 1.5rem;
+}
+
+.car-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: var(--dark-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.car-card .specs {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+}
+
+.car-card .price {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    background-color: var(--dark-color);
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #34495e;
+}
+
+/* --- Footer (New Detailed Version) --- */
+footer {
+    background-color: var(--dark-color);
+    color: #bdc3c7; /* Lighter gray for better readability */
+    padding-top: 4rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+    padding-bottom: 3rem;
+}
+
+.footer-col h3 {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-col .footer-logo {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+.footer-col p {
+    line-height: 1.8;
+    font-size: 0.9rem;
+}
+
+.footer-links, .contact-list {
+    list-style: none;
+}
+
+.footer-links li, .contact-list li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a, .contact-list a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.footer-links a:hover, .contact-list a:hover {
+    color: var(--primary-color);
+    padding-left: 5px;
+}
+
+.contact-list i {
+    width: 25px;
+    margin-right: 10px;
+    font-size: 1.1rem;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.map-container {
+    margin-top: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.footer-bottom {
+    border-top: 1px solid #34495e;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 992px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+    
+    .why-us .container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    header .container {
+        flex-direction: column;
+    }
+    header nav ul {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .contact-list a {
+       justify-content: center;
+    }
+}

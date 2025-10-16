@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond Used Car - ผู้นำมาตรฐานรถมือสอง</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">BeyondCar</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">หน้าแรก</a></li>
+                    <li><a href="#">ค้นหารถ</a></li>
+                    <li><a href="#">บริการของเรา</a></li>
+                    <li><a href="#">ติดต่อเรา</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>ค้นหารถมือสองคุณภาพ ที่คุณวางใจ</h2>
+                <p>รถทุกคันผ่านการตรวจเช็กกว่า 175 จุด พร้อมรับประกันคุณภาพสูงสุด 1 ปี</p>
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="ค้นหารุ่นรถที่คุณต้องการ เช่น Camry, Civic, Altis...">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-us">
+            <div class="container">
+                 <div class="feature-item">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h3>รับประกันคุณภาพ 1 ปี</h3>
+                    <p>มั่นใจทุกการขับขี่ด้วยการรับประกันเครื่องยนต์และเกียร์</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-clipboard-check"></i>
+                    <h3>ตรวจสภาพ 175 จุด</h3>
+                    <p>รถทุกคันผ่านการตรวจสอบโดยผู้เชี่ยวชาญตามมาตรฐาน</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-car-on"></i>
+                    <h3>การันตีคืนเงินใน 5 วัน</h3>
+                    <p>ไม่พอใจยินดีคืนเงินเต็มจำนวนตามเงื่อนไขที่กำหนด</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-cars">
+            <div class="container">
+                <h2>รถแนะนำสำหรับคุณ</h2>
+                <div class="car-listings" id="carListings">
+                    
+                    <div class="car-card" data-model="Porsche 718 Cayman">
+                        <img src="https://img2.pic.in.th/pic/E3D2C6C5-C082-408C-800C-18A72F910EC4-1024x683.jpg" alt="Porsche 718 Cayman">
+                        <div class="car-info">
+                            <h3>Porsche 718 Cayman</h3>
+                            <p class="specs">ปี: 2021 | เลขไมล์: 45,000 กม. | เบนซิน</p>
+                            <p class="price">989,000 บาท</p>
+                            <a href="#" class="btn">ดูรายละเอียด</a>
+                        </div>
+                    </div>
+
+                    <div class="car-card" data-model="Porsche Panamera">
+                        <img src="https://img2.pic.in.th/pic/E677D58C-2431-4FB4-97C8-393AA1311A6E-1024x681.jpg" alt="Porsche Panamera">
+                        <div class="car-info">
+                            <h3>Porsche Panamera</h3>
+                            <p class="specs">ปี: 2022 | เลขไมล์: 22,000 กม. | เบนซิน</p>
+                            <p class="price">1,050,000 บาท</p>
+                            <a href="#" class="btn">ดูรายละเอียด</a>
+                        </div>
+                    </div>
+
+                    <div class="car-card" data-model="Toyota C-HR">
+                        <img src="https://img5.pic.in.th/file/secure-sv1/0D8C7307-F94B-49F4-AE75-87A7116C64EF-1024x768.jpg" alt="Toyota C-HR">
+                        <div class="car-info">
+                            <h3>Toyota C-HR</h3>
+                            <p class="specs">ปี: 2020 | เลขไมล์: 60,000 กม. | เบนซิน</p>
+                            <p class="price">759,000 บาท</p>
+                            <a href="#" class="btn">ดูรายละเอียด</a>
+                        </div>
+                    </div>
+
+                    <div class="car-card" data-model="Honda Civic Hatchback (FK)">
+                        <img src="https://img5.pic.in.th/file/secure-sv1/LINE_NOTE_250607_13-1024x680.jpg" alt="Honda Civic Hatchback">
+                        <div class="car-info">
+                            <h3>Honda Civic Hatchback</h3>
+                            <p class="specs">ปี: 2022 | เลขไมล์: 35,000 กม. | ดีเซล</p>
+                            <p class="price">1,450,000 บาท</p>
+                            <a href="#" class="btn">ดูรายละเอียด</a>
+                        </div>
+                    </div>
+                    
+                    <div class="car-card" data-model="Mercedes-Benz GLC">
+                        <img src="https://img5.pic.in.th/file/secure-sv1/LINE_NOTE_250505_1-7-1024x681.jpg" alt="Mercedes-Benz GLC">
+                        <div class="car-info">
+                            <h3>Mercedes-Benz GLC</h3>
+                            <p class="specs">ปี: 2021 | เลขไมล์: 55,000 กม. | ไฮบริด</p>
+                            <p class="price">799,000 บาท</p>
+                            <a href="#" class="btn">ดูรายละเอียด</a>
+                        </div>
+                    </div>
+
+                    <div class="car-card" data-model="Mercedes-Benz C300e AMG">
+                        <img src="https://img2.pic.in.th/pic/LINE_NOTE_250526_13.jpg" alt="Mercedes-Benz C-Class">
+                        <div class="car-info">
+                            <h3>Mercedes-Benz C300e AMG</h3>
+                            <p class="specs">ปี: 2022 | เลขไมล์: 18,000 กม. | PHEV</p>
+                            <p class="price">2,490,000 บาท</p>
+                            <a href="#" class="btn">ดูรายละเอียด</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3 class="footer-logo">BeyondCar</h3>
+                <p>
+                    ผู้นำมาตรฐานรถมือสอง ยึดมั่นคุณภาพและการบริการที่เป็นเลิศ 
+                    คัดสรรรถยนต์เกรดพรีเมียม S-Class พร้อมประสบการณ์
+                    ในวงการรถมือสองกว่า 40 ปี
+                </p>
+            </div>
+    
+            <div class="footer-col">
+                <h3>เมนูลัด</h3>
+                <ul class="footer-links">
+                    <li><a href="#">หน้าแรก</a></li>
+                    <li><a href="#">รถทั้งหมด</a></li>
+                    <li><a href="#">เกี่ยวกับเรา</a></li>
+                    <li><a href="#">บทความ</a></li>
+                    <li><a href="#">ติดต่อเรา</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-col">
+                <h3>ช่องทางการติดต่อ</h3>
+                <ul class="contact-list">
+                    <li><a href="#"><i class="fab fa-facebook"></i> BeyondCar Thailand</a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i> BeyondCar Channel</a></li>
+                    <li><a href="#"><i class="fab fa-tiktok"></i> @beyondcar.th</a></li>
+                    <li><a href="#"><i class="fab fa-line"></i> @beyondcar</a></li>
+                    <li><a href="tel:024479292"><i class="fas fa-phone"></i> 02-447-9292</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-col">
+                <h3>ที่ตั้งสำนักงานใหญ่</h3>
+                <p>
+                    14 ม.17 ถ.กาญจนาภิเษก<br>
+                    แขวงบางระมาด เขตตลิ่งชัน<br>
+                    กรุงเทพมหานคร 10170
+                </p>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.215985834863!2d100.4199183153549!3d13.76615020059206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e299c8f621e739%3A0x62e81e74f1a6628a!2z4LiB4Lij4Liw4LiB4Lij4Liw4LiX4Lix4LiZ4LiV4Liz4LmA4Lil4Liw4LiX4Lix4LiZ4Liy4LiB4Lij4Liy!5e0!3m2!1sth!2sth!4v1668514930971!5m2!1sth!2sth" width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 BeyondCar. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
